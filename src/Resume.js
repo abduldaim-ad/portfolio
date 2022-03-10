@@ -33,7 +33,7 @@ export default function ControlledAccordions() {
             <li>30th January, 2002</li>
             <li>Address: House#DN-304, Street#5, Sector 4A, Amin Town, Khayaban-e Sir Syed, Rawalpindi</li>
             <li>Mobile No: +92 347 6794931</li>
-            <li>EEmail: gdaim551@gmail.com</li>
+            <li>Email: gdaim551@gmail.com</li>
           </ul>
           </Typography>
         </AccordionDetails>
