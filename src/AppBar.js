@@ -15,7 +15,7 @@ import MenuItem from '@mui/material/MenuItem';
 import App from './App'
 import './AppBar.css'
 
-const pages = ['Resume'];
+const pages = ['About Me'];
 const settings = ['Profile'];
 
 const ResponsiveAppBar = () => {
@@ -38,6 +38,10 @@ const ResponsiveAppBar = () => {
         ReactDOM.render(<><App/></>, document.getElementById('root'))
     )
   };
+
+  const handleLinkedIn = () => {
+    window.open("https://www.linkedin.com/in/abdul-daim-972865208/", "_blank")
+  }
 
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
@@ -135,7 +139,7 @@ const ResponsiveAppBar = () => {
               onClose={handleCloseUserMenu}
             >
               {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
+                <MenuItem key={setting} onClick={handleLinkedIn}>
                   <Typography textAlign="center">{setting}</Typography>
                 </MenuItem>
               ))}
