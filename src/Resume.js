@@ -12,7 +12,7 @@ import AboutMe from './aboutme';
 export default function ControlledAccordions() {
   const [expanded, setExpanded] = React.useState(false);
   const [items, setItems] = useState(AboutMe);
-
+  const a = "";
   const handleChange = (panel) => (event, isExpanded) => {
     setExpanded(isExpanded ? panel : false);
   };
