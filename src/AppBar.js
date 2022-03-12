@@ -15,7 +15,7 @@ import MenuItem from '@mui/material/MenuItem';
 import App from './App'
 import './AppBar.css'
 
-const pages = ['About Me'];
+const pages = ['About Me', 'Contact Us'];
 const settings = ['Profile'];
 
 const ResponsiveAppBar = () => {

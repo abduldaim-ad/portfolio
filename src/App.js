@@ -1,12 +1,14 @@
 import React from 'react'
-import AppBar from './AppBar'
-import Resume from './Resume.js'
+//import AppBar from './AppBar'
+//import Resume from './Resume'
+import NavBar from './NavBar'
 
 const App = () => {
   return (
     <>
-      <AppBar/>
-      <Resume/>
+      {/* <AppBar/> */}
+      <NavBar/>
+      {/* <Resume/> */}
     </>
   )
 }
