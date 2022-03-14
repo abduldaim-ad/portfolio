@@ -1,14 +1,11 @@
 import React from 'react'
-//import AppBar from './AppBar'
-//import Resume from './Resume'
-import NavBar from './NavBar'
+import AppBar from './AppBar'
+import Resume from './Resume'
 
 const App = () => {
   return (
     <>
-      {/* <AppBar/> */}
-      <NavBar/>
-      {/* <Resume/> */}
+      <AppBar/>
     </>
   )
 }

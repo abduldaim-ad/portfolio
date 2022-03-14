@@ -13,6 +13,7 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import App from './App'
+import Resume from './Resume'
 import './AppBar.css'
 
 const pages = ['About Me', 'Contact Us'];
@@ -33,9 +34,15 @@ const ResponsiveAppBar = () => {
     setAnchorElNav(null);
   };
 
-  const showPage = () => {
+  const showResumePage = () => {
     return(
-        ReactDOM.render(<><App/></>, document.getElementById('root'))
+        ReactDOM.render(<><App/><Resume/></>, document.getElementById('root'))
+    )
+  };
+
+  const showContactUsPage = () => {
+    return(
+        ReactDOM.render(<><App/><h1>ContactUs</h1></>, document.getElementById('root'))
     )
   };
 
@@ -105,15 +112,32 @@ const ResponsiveAppBar = () => {
             <img className="logo" src="images/logo.png" alt="Abdul Daim"/>
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            {pages.map((page) => (
+            {/* {pages.map((page) => (
               <Button
                 key={page}
-                onClick={showPage}
+                onClick={showResumePage}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
                 {page}
               </Button>
-            ))}
+            ))} */}
+          
+              <Button
+                key={pages[0]}
+                onClick={showResumePage}
+                sx={{ my: 2, color: 'white', display: 'block' }}
+              >
+                {pages[0]}
+              </Button>
+
+              <Button
+                key={pages[1]}
+                onClick={showContactUsPage}
+                sx={{ my: 2, color: 'white', display: 'block' }}
+              >
+                {pages[1]}
+              </Button>
+          
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
