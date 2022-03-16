@@ -9,7 +9,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import AboutMe from './aboutme';
 
-export default function ControlledAccordions() {
+export default function Extra() {
   const [expanded, setExpanded] = React.useState(false);
   const [items, setItems] = useState(AboutMe);
   const handleChange = (panel) => (event, isExpanded) => {
@@ -18,7 +18,7 @@ export default function ControlledAccordions() {
 
   return (
     <div>
-        <h1>Abdul Daim</h1>
+            <h1>Testing</h1>
           {
             items.map((elem)=>{
               const {id, title, data} = elem;

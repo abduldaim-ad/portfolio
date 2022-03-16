@@ -10,13 +10,14 @@ import {
 } from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
 import Resume from './Resume'
+import Extra from './extra'
 
 ReactDOM.render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />}>
         <Route path="/resume" element={<Resume />} />
-        <Route path="/invoices" element={<Resume />} />
+        <Route path="/extra" element={<Extra />} />
       </Route>
     </Routes>
   </BrowserRouter>,
