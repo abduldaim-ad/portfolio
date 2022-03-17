@@ -15,7 +15,7 @@ import Extra from './extra'
 ReactDOM.render(
   <BrowserRouter>
     <Routes>
-      <Route path="/portfolio" element={<><App /><Resume/></>}>
+      <Route path="/portfolio/" element={<><App /><Resume/></>}>
 
         {/* element = {<Resume/>} temporarily removed */}
         <Route path="/resume"  />
