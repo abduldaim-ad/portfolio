@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import { render } from "react-dom";
 import {
-  BrowserRouter,
+  HashRouter,
   Routes,
   Route,
 } from "react-router-dom";
@@ -13,9 +13,9 @@ import Resume from './Resume'
 import Extra from './extra'
 
 ReactDOM.render(
-  <BrowserRouter>
+  <HashRouter>
     <Routes>
-      <Route path="/portfolio/" element={<><App /><Resume/></>}>
+      <Route path="/" element={<><App /><Resume/></>}>
 
         {/* element = {<Resume/>} temporarily removed */}
         <Route path="/resume"  />
@@ -23,7 +23,7 @@ ReactDOM.render(
         <Route path="/projects" element={<Extra />} />
       </Route>
     </Routes>
-  </BrowserRouter>,
+  </HashRouter>,
   document.getElementById('root')
 );
 
