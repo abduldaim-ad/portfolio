@@ -15,13 +15,12 @@ import Extra from './extra'
 ReactDOM.render(
   <HashRouter>
     <Routes>
-      <Route path="/" element={<><App /><Resume/></>}>
+      <Route exact path="/" element={<><App /><Resume/></>}/>
 
         {/* element = {<Resume/>} temporarily removed */}
-        <Route path="/resume"  />
+        <Route exact path="/resume"  element={<><App /><Resume/></>}/>
 
-        <Route path="/projects" element={<Extra />} />
-      </Route>
+        <Route exact path="/projects" element={<><App /><Extra/></>}/>
     </Routes>
   </HashRouter>,
   document.getElementById('root')
