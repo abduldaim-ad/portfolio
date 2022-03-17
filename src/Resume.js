@@ -8,6 +8,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import AboutMe from './aboutme';
+import './index.css'
 
 export default function ControlledAccordions() {
   const [expanded, setExpanded] = React.useState(false);
@@ -17,13 +18,12 @@ export default function ControlledAccordions() {
   };
 
   return (
-    <div>
-        <h1>Abdul Daim</h1>
+    <div className='topSettings'>
           {
             items.map((elem)=>{
               const {id, title, data} = elem;
               return(
-                <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
+                <Accordion expanded={expanded === `panel${id}`} onChange={handleChange(`panel${id}`)}>
                   <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls="panel2bh-content"
@@ -54,7 +54,7 @@ export default function ControlledAccordions() {
             })
           }
 
-      <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
+      <Accordion expanded={expanded === 'panelLast'} onChange={handleChange('panelLast')}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2bh-content"
@@ -68,7 +68,7 @@ export default function ControlledAccordions() {
         <AccordionDetails>
           <Typography>
             <ul>
-                <a href='https://github.com/ad551' target='_blank'><GitHubIcon/></a>
+                <a href='https://github.com/abduldaim-ad' target='_blank'><GitHubIcon/></a>
                 <br/>
                 <a href='https://www.linkedin.com/in/abdul-daim-972865208/' target='_blank'><LinkedInIcon/></a>
             </ul>

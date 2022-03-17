@@ -15,9 +15,12 @@ import Extra from './extra'
 ReactDOM.render(
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<App />}>
-        <Route path="/resume" element={<Resume />} />
-        <Route path="/extra" element={<Extra />} />
+      <Route path="/" element={<><App /><Resume/></>}>
+
+        {/* element = {<Resume/>} temporarily removed */}
+        <Route path="/resume"  />
+        
+        <Route path="/projects" element={<Extra />} />
       </Route>
     </Routes>
   </BrowserRouter>,

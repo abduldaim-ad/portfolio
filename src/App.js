@@ -1,17 +1,51 @@
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import { Outlet, Link } from "react-router-dom";
 import React from 'react'
+import './App.css'
+import MenuIcon from '@mui/icons-material/Menu';
+import ImageAvatars from './ImageAvatars';
+import logo from './images/logo.png';
 import AppBar from './AppBar'
 import Resume from './Resume'
 
 const App = () => {
+  const menuHandler = () => {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav fixed-top") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav fixed-top";
+    }
+  }
+
+  const menuOpenClose = () => {  
+    // Get the container element
+    var btnContainer = document.getElementById("myTopnav");
+    btnContainer.className = "topnav fixed-top";
+    // Get all buttons with class="btn" inside the container
+    var btns = btnContainer.getElementsByClassName("btn");
+
+    // Loop through the buttons and add the active class to the current/clicked button
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+
+    // If there's no active class
+    if (current.length > 0) {
+      current[0].className = current[0].className.replace(" active", "");
+    }
+    // Add the active class to the current/clicked button
+    this.className += " active";
+  });
+  }
+  }
+
   return (
 <div>
 
       <Outlet />
 
-      
-<nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-primary" 
+{/* <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-primary" 
       style={{
           paddingBottom: "1rem",
           boxShadow: "0 5px 8px #888888"
@@ -19,7 +53,7 @@ const App = () => {
   <div className="container-fluid">
     <a className="navbar-brand" href="#">Abdul Daim</a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span className="navbar-toggler-icon"></span>
+      <span className="navbar-toggler-icon" onClick={menuOpenClose}></span>
     </button>
     <div className="collapse navbar-collapse" id="navbarNav">
       <ul className="navbar-nav">
@@ -32,8 +66,25 @@ const App = () => {
       </ul>
     </div>
   </div>
-</nav>
-      
+</nav> */}
+
+<div className="topnav fixed-top" id="myTopnav">
+  <a>
+    <ImageAvatars/>
+  </a>
+  <a>
+    <h3 style={{color:"white", paddingTop:"5%"}}>Abdul Daim</h3>
+  </a>
+  <a className='btn'>
+    <Link aria-current="page" to="/resume" onClick={menuOpenClose}>About Me</Link>
+  </a>
+  <a className='btn'>
+    <Link aria-current="page" to="/projects" onClick={menuOpenClose}>My Projects</Link>
+  </a>
+  <a className="icon" id="myIcon" onClick={menuHandler}>
+    <MenuIcon/>
+  </a>
+</div>
     </div>
   );
 }

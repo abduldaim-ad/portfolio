@@ -1,80 +1,33 @@
-import * as React from 'react';
-import {useState} from 'react';
-import Accordion from '@mui/material/Accordion';
-import AccordionDetails from '@mui/material/AccordionDetails';
-import AccordionSummary from '@mui/material/AccordionSummary';
-import Typography from '@mui/material/Typography';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import AboutMe from './aboutme';
+import React,{useState} from 'react';
+import ImageList from '@mui/material/ImageList';
+import ImageListItem from '@mui/material/ImageListItem';
+import ProjectsGallery from './ProjectsGallery';
 
-export default function Extra() {
-  const [expanded, setExpanded] = React.useState(false);
-  const [items, setItems] = useState(AboutMe);
-  const handleChange = (panel) => (event, isExpanded) => {
-    setExpanded(isExpanded ? panel : false);
-  };
-
+export default function StandardImageList() {
+  const [itemData, setItemData] = useState(ProjectsGallery);
   return (
-    <div>
-            <h1>Testing</h1>
-          {
-            items.map((elem)=>{
-              const {id, title, data} = elem;
-              return(
-                <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
-                  <AccordionSummary
-                    expandIcon={<ExpandMoreIcon />}
-                    aria-controls="panel2bh-content"
-                    id="panel2bh-header"
-                  >
-                  
+    <div className='topSettings'>
 
-                    <Typography sx={{ width: '33%', flexShrink: 0 }}><b>{title}</b></Typography>
-                    <Typography sx={{ color: 'text.secondary' }}>
-
-                    </Typography>
-                  </AccordionSummary>
-                  <AccordionDetails>
-                    <Typography>
-                    <ul>
-                      {
-                        data.map((bullets)=>{
-                          return (
-                            <li>{bullets}</li>                          
-                          )
-                        })
-                      }
-                    </ul>
-                    </Typography>
-                  </AccordionDetails>
-                </Accordion>                 
-              )
-            })
-          }
-
-      <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel2bh-content"
-          id="panel2bh-header"
-        >
-          <Typography sx={{ width: '33%', flexShrink: 0 }}><b>Links</b></Typography>
-          <Typography sx={{ color: 'text.secondary' }}>
-
-          </Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography>
-            <ul>
-                <a href='https://github.com/ad551' target='_blank'><GitHubIcon/></a>
-                <br/>
-                <a href='https://www.linkedin.com/in/abdul-daim-972865208/' target='_blank'><LinkedInIcon/></a>
-            </ul>
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
-    </div>
+    <ImageList sx={{ width: 400, height: 450 }} cols={2} rowHeight={164}>
+      {itemData.map((item) => {
+        const {id, imageSrc, caption} = item;
+        
+        return(
+        <ImageListItem key={id}>
+          <img
+            src={`${imageSrc}?w=164&h=164&fit=crop&auto=format`}
+            srcSet={`${imageSrc}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+            alt={
+              // item.title
+              "Projects Gallery"
+              }
+            loading="lazy"
+          />
+          <caption style={{color:"#000000", fontWeight:"bold"}}>{caption}</caption>
+        </ImageListItem>
+        );
+      })}
+    </ImageList>
+ </div>
   );
 }
