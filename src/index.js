@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 //import { render } from "react-dom";
 import {
-  BrowserRouter,
+  HashRouter,
   Routes,
   Route,
 } from "react-router-dom";
@@ -15,13 +15,13 @@ import Projects from './Projects'
 //import Extra from './extra'
 
 ReactDOM.render(
-  <BrowserRouter>
+  <HashRouter>
     <Routes>
         <Route path="/" element={<><App/><Landing /></>}/>
         <Route path="/resume" element={<><App/><Resume/></>} />
         <Route path="/projects" element={<><App/><Projects/></>} />
     </Routes>
-  </BrowserRouter>,
+  </HashRouter>,
   document.getElementById('root')
 );
 
