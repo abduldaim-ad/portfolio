@@ -1,0 +1,31 @@
+#div1,
+#div2,
+#div3,
+#div4,
+#div5
+ {
+    width: 15%;
+    height: 50px;
+    text-align: center;
+    padding: 1%;
+    box-shadow: 3px;
+    border-radius: 5%;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    background-color: rgb(55, 220, 226);
+    box-shadow: 5px 5px 2.5px lightblue;
+    font-weight: bold;
+    position: relative;
+    animation: mymove 10s infinite;
+  }
+  
+  #div1 {animation-timing-function: ease-in;}
+  #div2 {animation-timing-function: ease-out;}
+  #div3 {animation-timing-function: ease-in;}
+  #div4 {animation-timing-function: ease-out;}
+  
+  @keyframes mymove {
+    from {left: 0%;}
+    to {left: 100%;}
+  }
+  

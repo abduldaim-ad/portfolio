@@ -4,9 +4,6 @@ import React from 'react'
 import './App.css'
 import MenuIcon from '@mui/icons-material/Menu';
 import ImageAvatars from './ImageAvatars';
-import logo from './images/logo.png';
-import AppBar from './AppBar'
-import Resume from './Resume'
 
 const App = () => {
   const menuHandler = () => {

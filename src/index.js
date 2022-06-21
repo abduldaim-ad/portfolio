@@ -2,26 +2,24 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import { render } from "react-dom";
+//import { render } from "react-dom";
 import {
   BrowserRouter,
   Routes,
   Route,
 } from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
+import Landing from './Landing'
 import Resume from './Resume'
-import Extra from './extra'
+import Projects from './Projects'
+//import Extra from './extra'
 
 ReactDOM.render(
   <BrowserRouter>
     <Routes>
-      <Route path="/portfolio/" element={<><App /><Resume/></>}>
-
-        {/* element = {<Resume/>} temporarily removed */}
-        <Route path="/resume"  />
-
-        <Route path="/projects" element={<Extra />} />
-      </Route>
+        <Route path="/" element={<><App/><Landing /></>}/>
+        <Route path="/resume" element={<><App/><Resume/></>} />
+        <Route path="/projects" element={<><App/><Projects/></>} />
     </Routes>
   </BrowserRouter>,
   document.getElementById('root')
