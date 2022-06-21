@@ -17,9 +17,9 @@ import Projects from './Projects'
 ReactDOM.render(
   <BrowserRouter>
     <Routes>
-        <Route path="/" element={<><App/><Landing /></>}/>
-        <Route path="/resume" element={<><App/><Resume/></>} />
-        <Route path="/projects" element={<><App/><Projects/></>} />
+        <Route path="/portfolio" element={<><App/><Landing /></>}/>
+        <Route path="/portfolio/resume" element={<><App/><Resume/></>} />
+        <Route path="/portfolio/projects" element={<><App/><Projects/></>} />
     </Routes>
   </BrowserRouter>,
   document.getElementById('root')
