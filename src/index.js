@@ -9,18 +9,19 @@ import {
   Route,
 } from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
-import Landing from './Landing'
-import Resume from './Resume'
-import Projects from './Projects'
+// import Landing from './Landing'
+// import Resume from './Resume'
+// import Projects from './Projects'
 //import Extra from './extra'
 
 ReactDOM.render(
   <HashRouter>
-    <Routes>
+    {/* <Routes>
         <Route path="/" element={<><App/><Landing /></>}/>
         <Route path="/resume" element={<><App/><Resume/></>} />
         <Route path="/projects" element={<><App/><Projects/></>} />
-    </Routes>
+    </Routes> */}
+    <App/>
   </HashRouter>,
   document.getElementById('root')
 );

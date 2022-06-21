@@ -1,8 +1,11 @@
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
-import { Outlet, Link } from "react-router-dom";
+import { Outlet, Router, Route, Link } from "react-router-dom";
 import React from 'react'
 import './App.css'
 import MenuIcon from '@mui/icons-material/Menu';
+import Landing from './Landing'
+import Resume from './Resume'
+import Projects from './Projects'
 import ImageAvatars from './ImageAvatars';
 
 const App = () => {
@@ -64,7 +67,7 @@ for (var i = 0; i < btns.length; i++) {
     </div>
   </div>
 </nav> */}
-
+<Router>
 <div className="topnav fixed-top" id="myTopnav">
   <a>
     <ImageAvatars/>
@@ -82,6 +85,16 @@ for (var i = 0; i < btns.length; i++) {
     <MenuIcon/>
   </a>
 </div>
+            <Route path="/">
+              <Landing />
+            </Route>
+            <Route path="/resume">
+              <Resume />
+            </Route>
+            <Route path="/projects">
+              <Projects />
+            </Route>
+</Router>
     </div>
   );
 }
