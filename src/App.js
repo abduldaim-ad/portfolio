@@ -71,13 +71,16 @@ for (var i = 0; i < btns.length; i++) {
     <ImageAvatars/>
   </a>
   <a>
-    <h3 style={{color:"white", paddingTop:"5%"}}>Abdul Daim</h3>
+    <Link className='btn' aria-current="page" to="/" onClick={menuOpenClose} style={{color:"white", paddingTop:"7%", fontWeight:"bolder"}}>Abdul Daim</Link>
   </a>
   <a className='btn'>
-    <Link aria-current="page" to="/resume" onClick={menuOpenClose}>About Me</Link>
+    <Link aria-current="page" to="/" onClick={menuOpenClose} style={{fontWeight:"bolder"}}>Home</Link>
   </a>
   <a className='btn'>
-    <Link aria-current="page" to="/projects" onClick={menuOpenClose}>My Projects</Link>
+    <Link aria-current="page" to="/resume" onClick={menuOpenClose} style={{fontWeight:"bolder"}}>About Me</Link>
+  </a>
+  <a className='btn'>
+    <Link aria-current="page" to="/projects" onClick={menuOpenClose} style={{fontWeight:"bolder"}}>My Projects</Link>
   </a>
   <a className="icon" id="myIcon" onClick={menuHandler}>
     <MenuIcon/>

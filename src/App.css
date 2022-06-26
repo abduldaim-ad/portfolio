@@ -60,12 +60,15 @@ body {
 }
 
 .topnav a:hover {
-  background-color: #221FE0;
+  /* background-color: #221FE0; */
+  border-radius: 15%;
   color: #ffffff;
 }
 
 .topnav a.active {
   background-color: #000000;
+  border: 2px solid white;
+  border-radius: 15%;
 }
 
 .topnav .icon {
