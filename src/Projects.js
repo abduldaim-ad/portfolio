@@ -6,28 +6,43 @@ import ProjectsGallery from './ProjectsGallery';
 export default function StandardImageList() {
   const [itemData, setItemData] = useState(ProjectsGallery);
   return (
-    <div className='topSettings'>
+<>
+  <div
+    id="carouselMultiItemExample"
+    class="carousel slide carousel-dark text-center"
+    data-mdb-ride="carousel"
+  >
+    <div class="carousel-item active">
+      <div class="container">
+        <div class="row" style={{marginTop:"10.5vh"}}>
 
-    <ImageList sx={{ width: 400, height: 450 }} cols={2} rowHeight={164}>
-      {itemData.map((item) => {
-        const {id, imageSrc, caption} = item;
-        
-        return(
-        <ImageListItem key={id}>
-          <img
-            src={`${imageSrc}?w=164&h=164&fit=crop&auto=format`}
-            srcSet={`${imageSrc}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
-            alt={
-              // item.title
-              "Projects Gallery"
-              }
-            loading="lazy"
-          />
-          <caption style={{color:"#000000", fontWeight:"bold"}}>{caption}</caption>
-        </ImageListItem>
-        );
-      })}
-    </ImageList>
- </div>
+          {itemData.map((item) => {
+            const {imageSrc, caption, desc, githubLink} = item;
+
+            return(
+                  <div class="col-lg-4" style={{marginTop:"3vh"}}>
+                    <div class="card">
+                      <img
+                        src={imageSrc}
+                        class="card-img-top"
+                        alt={caption}
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">{caption}</h5>
+                        <p class="card-text">
+                          {desc}
+                        </p>
+                        <a href={githubLink} target="_blank" class="btn btn-primary">GitHub Link</a>
+                      </div>
+                    </div>
+                  </div>
+            );
+          })}
+
+        </div>
+      </div>
+    </div>
+  </div>
+</>
   );
 }
