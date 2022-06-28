@@ -24,17 +24,16 @@ const AboutMe = [
             "Languages: Reactjs, JavaScript, HTML/CSS/Bootstrap/Material-UI, Java, C++, C",
             "Wordpress Development",
             "Software Usage: MS Office, VS Code, Adobe Illustrator, Adobe XD",
-            "Typing Speed: 43 WPM",
-            "Major Courses: OOP, Data Structures, Database, Software Engineering, Software ",
-            "Requirement Engineering, Human Computer Interaction, Operating Systems"
+            "Typing Speed: 45 WPM",
+            "Major Courses: OOP, Data Structures, Database, Software Engineering, Software Requirement Engineering, Human Computer Interaction, Operating Systems",
         ]
     },
     {
         id: 4,
         title: "Education",
         data: [
-            "BS Software Engineering (6th Semester)",
-            "FSc. Pre-Engineering"
+            "Pursuing BS Software Engineering",
+            "FSc. Pre-Engineering",
         ]
     },
     {
@@ -43,16 +42,24 @@ const AboutMe = [
         data: [
             "Good written and communication skills",
             "Creative thinker",
-            "Team leading abilities"
+            "Team leading abilities",
         ]
     },
     {
         id: 6,
-        title: "Achievements",
+        title: "Work Experience",
         data: [
-            "Did internship of 6 weeks at Invictus360 and gained experience of mobile and web designing"
+            "Did internship of 6 weeks at Invictus360 and gained experience of mobile and web designing",
         ]
     },
+    {
+        id: 7,
+        title: "Achievements",
+        data: [
+            "Certificates (2) of participation in ReactSummit 2022, Outstanding Academic Performance and Excellent Behavior in BSSE Program | 2021."
+        ]
+    },
+
 ];
 
 export default AboutMe;

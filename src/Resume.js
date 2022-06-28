@@ -71,6 +71,8 @@ export default function ControlledAccordions() {
                 <a href='https://github.com/abduldaim-ad' target='_blank'><GitHubIcon/></a>
                 <br/>
                 <a href='https://www.linkedin.com/in/abdul-daim-972865208/' target='_blank'><LinkedInIcon/></a>
+                <br/>
+                <a href='https://www.linkedin.com/in/abdul-daim-972865208/' target='_blank'>React Summit Certificate</a>
             </ul>
           </Typography>
         </AccordionDetails>
