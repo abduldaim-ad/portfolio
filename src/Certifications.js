@@ -1,10 +1,10 @@
 import React,{useState} from 'react';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
-import ProjectsGallery from './ProjectsGallery';
+import CertificationsGallery from './CertificationsGallery';
 
 export default function StandardImageList() {
-  const [itemData, setItemData] = useState(ProjectsGallery);
+  const [itemData, setItemData] = useState(CertificationsGallery);
   return (
 <>
   <div
@@ -26,14 +26,14 @@ export default function StandardImageList() {
                         src={imageSrc}
                         class="card-img-top"
                         alt={caption}
-                        style={{objectFit:"contain", height:"27vh"}}
+                        style={{objectFit:"contain", height:"40vh"}}
                       />
                       <div class="card-body">
                         <h5 class="card-title">{caption}</h5>
                         <p class="card-text">
                           {desc}
                         </p>
-                        <a href={githubLink} target="_blank" class="btn btn-primary">GitHub Link</a>
+                        {/* <a href={githubLink} target="_blank" class="btn btn-primary">GitHub Link</a> */}
                       </div>
                     </div>
                   </div>

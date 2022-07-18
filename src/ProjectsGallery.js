@@ -6,7 +6,7 @@ const ProjectsGallery = [
         id: 1,
         imageSrc: "https://live.staticflickr.com/65535/52191411398_028eb10e3f_b.jpg",
         caption: "About Me",
-        desc: "This is a mini project based on html5.",
+        desc: "This is a mini project based on html5. Just to start!",
         githubLink: "https://github.com/abduldaim-ad/html_web_page",
     },
     {
@@ -41,14 +41,14 @@ const ProjectsGallery = [
         id: 6,
         imageSrc: "https://live.staticflickr.com/65535/52190382102_a82da4c4af_b.jpg",
         caption: "E-Bell C2C Webpage",
-        desc: "Simple design of E-commerce web page.",
+        desc: "Simple design of E-commerce web page with a navbar and gradient look.",
         githubLink: "https://github.com/abduldaim-ad/E-Bell_C2C_Website_Practice",
     },
     {
         id: 7,
         imageSrc: "https://live.staticflickr.com/65535/52191391726_e92632f2b2_b.jpg",
         caption: "Ultimate Frisbee Website",
-        desc: "This project is for the practice of CSS.",
+        desc: "This project is for the practice of CSS. A website with some styled text/table/image.",
         githubLink: "https://github.com/abduldaim-ad/html_css_practice",
     },
     {
@@ -132,7 +132,7 @@ const ProjectsGallery = [
         id: 19,
         imageSrc: "https://live.staticflickr.com/65535/52191879805_4b17921792_b.jpg",
         caption: "Instagram Clone Practice (MERN)",
-        desc: "This was my first project using complete MERN for the practice of MERN Stack.",
+        desc: "This was my first project using complete MERN for the practice of MERN Stack. Getting started with Reactjs!",
         githubLink: "https://github.com/abduldaim-ad/Instagram_Clone_Practice",
     },
     {

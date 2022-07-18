@@ -82,6 +82,9 @@ for (var i = 0; i < btns.length; i++) {
   <a className='btn'>
     <Link aria-current="page" to="/projects" onClick={menuOpenClose} style={{fontWeight:"bolder"}}>My Projects</Link>
   </a>
+  <a className='btn'>
+    <Link aria-current="page" to="/certifications" onClick={menuOpenClose} style={{fontWeight:"bolder"}}>My Certifications</Link>
+  </a>
   <a className="icon" id="myIcon" onClick={menuHandler}>
     <MenuIcon/>
   </a>

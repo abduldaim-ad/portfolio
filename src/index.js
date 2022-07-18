@@ -12,6 +12,7 @@ import reportWebVitals from './reportWebVitals';
 import Landing from './Landing'
 import Resume from './Resume'
 import Projects from './Projects'
+import Certifications from './Certifications'
 //import Extra from './extra'
 
 ReactDOM.render(
@@ -20,6 +21,7 @@ ReactDOM.render(
         <Route path="/" element={<><App/><Landing /></>}/>
         <Route path="/resume" element={<><App/><Resume/></>} />
         <Route path="/projects" element={<><App/><Projects/></>} />
+        <Route path="/certifications" element={<><App/><Certifications/></>} />
     </Routes>
   </HashRouter>,
   document.getElementById('root')
