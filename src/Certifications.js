@@ -16,7 +16,7 @@ export default function StandardImageList() {
       <div class="container">
         <div class="row" style={{marginTop:"10.5vh"}}>
 
-          {itemData.reverse().map((item) => {
+          {itemData.map((item) => {
             const {imageSrc, caption, desc, githubLink} = item;
 
             return(

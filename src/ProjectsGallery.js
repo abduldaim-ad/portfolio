@@ -149,7 +149,35 @@ const ProjectsGallery = [
         desc: "E-Seller was my semester project of web engineering. It has Sign In/Sign Up, Cart, Checkout, Pending Orders, etc.",
         githubLink: "https://github.com/abduldaim-ad/semester_project",
     },
+    {
+        id: 22,
+        imageSrc: "https://live.staticflickr.com/65535/52229492990_a4e1a30974_b.jpg",
+        caption: "Landing Page",
+        desc: "Based on the concepts of props and components reusability. This was good to practice the concepts of React.js.",
+        githubLink: "https://github.com/abduldaim-ad/react-practice",
+    },
+    {
+        id: 23,
+        imageSrc: "https://live.staticflickr.com/65535/52227968247_e08dca683a_b.jpg",
+        caption: "AU Website 1",
+        desc: "This project is made in HTML and CSS and has three web pages. It also has a google map displayed in the Contact Us page.",
+        githubLink: "https://github.com/abduldaim-ad/au_website_html_css_lab_two",
+    },
+    {
+        id: 24,
+        imageSrc: "https://live.staticflickr.com/65535/52229543530_254067da44_b.jpg",
+        caption: "AU Website 2",
+        desc: "This website has a background video placed at the header. It has also a beautiful table with hover effect.",
+        githubLink: "https://github.com/abduldaim-ad/au_website_html_css",
+    },
+    {
+        id: 25,
+        imageSrc: "https://live.staticflickr.com/65535/52228022532_fd910df6b5_b.jpg",
+        caption: "Create User",
+        desc: "Developed in HTML/CSS/JS and has functionality to add the information of user to the table.",
+        githubLink: "https://github.com/abduldaim-ad/create-user",
+    },
 
 ];
 
-export default ProjectsGallery;
+export default ProjectsGallery.reverse();

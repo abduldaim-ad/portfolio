@@ -40,4 +40,4 @@ const CertificationsGallery = [
 
 ];
 
-export default CertificationsGallery;
+export default CertificationsGallery.reverse();
