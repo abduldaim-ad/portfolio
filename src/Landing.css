@@ -1,0 +1,125 @@
+#landing-bg{
+  overflow-x: hidden;
+  height:100%;
+  background:linear-gradient(180deg, #ffffff 9%, #221FE0 43%, #ffffff 93%);
+  padding:20vh 10.5% 25.5vh 10.5%;
+}
+
+#div1,
+#div2,
+#div3,
+#div4,
+#div5
+ {
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    padding: 1%;
+    box-shadow: 3px;
+    border-radius: 5%;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    background-color: #221FE0;
+    box-shadow: 5px 5px 2.5px lightblue;
+    font-weight: bold;
+    position: relative;
+  }
+  
+  #div1 {animation-timing-function: ease-in;}
+  #div2 {animation-timing-function: ease-in;}
+  #div3 {animation-timing-function: ease-in;}
+  #div4 {animation-timing-function: ease-in;}
+  
+  @media only screen and (min-width: 600px) {
+    #div1,
+    #div2,
+    #div3,
+    #div4,
+    #div5{
+    animation: mymove 10s infinite;
+    animation-direction: alternate;
+    }
+    @keyframes mymove {
+      from {left: 0%;}
+      to {left: 80%;}
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    #div1,
+    #div2,
+    #div3,
+    #div4,
+    #div5{
+    animation: mymove 5s infinite;
+    animation-direction: alternate;
+    }
+    @keyframes mymove {
+      from {left: 0%;}
+      to {left: 30%;}
+    }
+  }
+
+  @keyframes moveWords {
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  /* Apply the animation to the words */
+  .animated-words {
+    font-size: 36px;
+    white-space: nowrap;
+    animation: moveWords 15s linear infinite;
+    animation-direction: alternate;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .animated-words {
+      font-size: 13px;
+      animation: moveWords 10s linear infinite;
+      animation-direction: alternate;
+    }
+  }
+  /* word: Web Developer */
+  .web-developer {
+    color: #007bff;
+  }
+  /* word: MongoDB */
+  .mongo {
+    color: #47A248;
+  }
+  /* word: Express.js */
+  .express {
+    color: #2c3e50;
+  }
+  /* word: React.js */
+  .react {
+    color: #61dafb;
+  }
+  /* word: MERN */
+  .mern {
+    color: #202225;
+  }
+  /* word: Bootstrap */
+  .bootstrap {
+    color: #563d7c;
+  }
+  /* word: Figma */
+  .figma {
+    color: #2c3e50;
+  }
+  /* word: Node.js */
+  .node {
+    color: #215732;
+  }
+  /* word: Material-UI */
+  .material-ui {
+      color: #00b0ff;
+  }
+  /* word: Ant Design */
+  .ant-design {
+      color: #1890ff;
+  }
+  .web-designer, .nlp {
+      color: #007bff;
+  }
