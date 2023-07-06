@@ -21,6 +21,7 @@ export default function StandardImageList() {
 
             return(
                   <div class="col-lg-4" style={{marginTop:"3vh"}}>
+                  <a href={imageSrc}>
                     <div class="card">
                       <img
                         src={imageSrc}
@@ -36,6 +37,7 @@ export default function StandardImageList() {
                         {/* <a href={githubLink} target="_blank" class="btn btn-primary">GitHub Link</a> */}
                       </div>
                     </div>
+                  </a>
                   </div>
             );
           })}
