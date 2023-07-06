@@ -4,6 +4,7 @@ import ImageListItem from '@mui/material/ImageListItem';
 import ProjectsGallery from './ProjectsGallery';
 
 export default function StandardImageList() {
+  // Testing
   const itemData = ProjectsGallery;
   return (
 <>

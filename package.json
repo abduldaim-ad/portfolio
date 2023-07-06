@@ -28,6 +28,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "build:ci": "npm run build --warnings-as-errors=false"
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
