@@ -1,11 +1,11 @@
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
-import { Outlet, Routes, Route, Link } from "react-router-dom";
+import { Outlet, Link } from "react-router-dom";
 import React from 'react'
 import './App.css'
 import MenuIcon from '@mui/icons-material/Menu';
-import Landing from './Landing'
-import Resume from './Resume'
-import Projects from './Projects'
+// import Landing from './Landing'
+// import Resume from './Resume'
+// import Projects from './Projects'
 import ImageAvatars from './ImageAvatars';
 
 const App = () => {
@@ -43,7 +43,7 @@ for (var i = 0; i < btns.length; i++) {
   return (
 <div>
       <Outlet />
-// Testing
+
 {/* <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-primary" 
       style={{
           paddingBottom: "1rem",
