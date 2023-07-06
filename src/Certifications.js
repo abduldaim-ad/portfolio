@@ -22,7 +22,7 @@ export default function StandardImageList() {
             return(
                   <div class="col-lg-4" style={{marginTop:"3vh"}}>
                     <div class="card">
-                      <a href={imageSrc}>
+                      <a href={imageSrc} target="_blank">
                       <img
                         src={imageSrc}
                         class="card-img-top"
