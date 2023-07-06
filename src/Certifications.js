@@ -21,14 +21,15 @@ export default function StandardImageList() {
 
             return(
                   <div class="col-lg-4" style={{marginTop:"3vh"}}>
-                  <a href={imageSrc}>
                     <div class="card">
+                      <a href={imageSrc}>
                       <img
                         src={imageSrc}
                         class="card-img-top"
                         alt={caption}
                         style={{objectFit:"contain", height:"40vh"}}
                       />
+                      </a>
                       <div class="card-body">
                         <h5 class="card-title">{caption}</h5>
                         <p class="card-text">
@@ -37,7 +38,6 @@ export default function StandardImageList() {
                         {/* <a href={githubLink} target="_blank" class="btn btn-primary">GitHub Link</a> */}
                       </div>
                     </div>
-                  </a>
                   </div>
             );
           })}
