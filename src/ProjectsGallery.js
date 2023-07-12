@@ -297,7 +297,7 @@ const ProjectsGallery = [
         imageSrc: "https://live.staticflickr.com/65535/53041050292_5e87587912_o.png",
         caption:"Task Manager",
         desc:"A web application using react+vite to practice the concepts of redux toolkit. The application can add task, edit task, update task, delete task and toggle task completion.",
-        githubLink:"https://github.com/abduldaim-ad/user_management_rtk",
+        githubLink:"https://github.com/abduldaim-ad/task_management_rtk_vite_react",
         status:"Not Deployed",
         deployedLink:"#",
         pointerEvents:"none",
