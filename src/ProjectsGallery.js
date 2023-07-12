@@ -160,7 +160,7 @@ const ProjectsGallery = [
         githubLink: "https://github.com/abduldaim-ad/greeting_website_reactjs",
         status:"Deployed Link Here",
         deployedLink:"https://abduldaim-ad.github.io/greeting_website_reactjs",
-        pointerEvents:"none",
+        pointerEvents:"",
     },
     {
         id: 17,
@@ -298,9 +298,9 @@ const ProjectsGallery = [
         caption:"Task Manager",
         desc:"A web application using react+vite to practice the concepts of redux toolkit. Add, Edit, Update and Delete Task.",
         githubLink:"https://github.com/abduldaim-ad/task_management_rtk_vite_react",
-        status:"Not Deployed",
-        deployedLink:"#",
-        pointerEvents:"none",
+        status:"Deployed Link Here",
+        deployedLink:"https://abduldaim-ad.github.io/task_management_rtk_vite_react/",
+        pointerEvents:"",
     }
 
 ];
