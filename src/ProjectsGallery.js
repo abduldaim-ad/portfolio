@@ -290,7 +290,7 @@ const ProjectsGallery = [
         githubLink: "https://github.com/abduldaim-ad/bmi-ad",
         status:"Not Deployed",
         deployedLink:"https://abduldaim-ad.github.io/bmi-ad/",
-        pointerEvents:"",
+        pointerEvents:"none",
     },
     {
         id: 30,
