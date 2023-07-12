@@ -158,8 +158,8 @@ const ProjectsGallery = [
         caption: "Greeting Website",
         desc: "Good Morning, Good Afternoon and Good Night based on current time.",
         githubLink: "https://github.com/abduldaim-ad/greeting_website_reactjs",
-        status:"Not Deployed",
-        deployedLink:"#",
+        status:"Deployed Link Here",
+        deployedLink:"https://abduldaim-ad.github.io/greeting_website_reactjs",
         pointerEvents:"none",
     },
     {
@@ -288,10 +288,20 @@ const ProjectsGallery = [
         caption: "BMI Calculator AD (React)",
         desc: "A simple bmi calculator app developed in react to calculate the body mass index by taking value of weight and height.",
         githubLink: "https://github.com/abduldaim-ad/bmi-ad",
-        status:"Deployed Link Here",
+        status:"Not Deployed",
         deployedLink:"https://abduldaim-ad.github.io/bmi-ad/",
         pointerEvents:"",
     },
+    {
+        id: 30,
+        imageSrc: "https://live.staticflickr.com/65535/53041050292_5e87587912_o.png",
+        caption:"Task Manager",
+        desc:"A web application using react+vite to practice the concepts of redux toolkit. The application can add task, edit task, update task, delete task and toggle task completion.",
+        githubLink:"https://github.com/abduldaim-ad/user_management_rtk",
+        status:"Not Deployed",
+        deployedLink:"#",
+        pointerEvents:"none",
+    }
 
 ];
 
