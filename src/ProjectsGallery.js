@@ -306,7 +306,7 @@ const ProjectsGallery = [
         id: 31,
         imageSrc: "https://live.staticflickr.com/65535/53057476670_f88a27b2c6_b.jpg",
         caption: "Random Score Game",
-        desc: "Random Score generates random number from 1 to 10 and the player wins when score counts to a total of 50. The power button of even and odd help the player to win the game.",
+        desc: "Random Score generates random number from 1 to 10 and the player wins when score counts to a total of 50.",
         githubLink: "https://github.com/abduldaim-ad/randomscore",
         status: "Deployed Link Here",
         deployedLink: "https://abduldaim-ad.github.io/randomscore",
