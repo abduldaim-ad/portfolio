@@ -312,6 +312,17 @@ const ProjectsGallery = [
         deployedLink: "https://abduldaim-ad.github.io/randomscore",
         pointerEvents: "",
     },
+    
+    {
+        id: 32,
+        imageSrc: "#",
+        caption: "Tic Tac Toe",
+        desc: "A famous tic tac toe game with interactive user interface. The game can be played with two players.",
+        githubLink: "https://github.com/abduldaim-ad/tic-tac-toe",
+        status: "Deployed Link Here",
+        deployedLink: "https://abduldaim-ad.github.io/tic-tac-toe/",
+        pointerEvents: "",
+    },
 
 ];
 
