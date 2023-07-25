@@ -315,7 +315,7 @@ const ProjectsGallery = [
     
     {
         id: 32,
-        imageSrc: "#",
+        imageSrc: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Tic_tac_toe.svg/1200px-Tic_tac_toe.svg.png",
         caption: "Tic Tac Toe",
         desc: "A famous tic tac toe game with interactive user interface. The game can be played with two players.",
         githubLink: "https://github.com/abduldaim-ad/tic-tac-toe",
